@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible problem in Solana Merchant Desk
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Never include seed phrases, private keys, or personal information.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, Node.js version, and cluster
+    validations:
+      required: true

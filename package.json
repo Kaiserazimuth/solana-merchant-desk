@@ -1,0 +1,26 @@
+{
+  "name": "blink-merchant-starter",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Open-source Solana merchant checkout with unique invoice references and on-chain payment verification.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "preview": "node preview.mjs",
+    "test": "node --test",
+    "check": "node --check server.mjs && node --check src/action.mjs && node --check public/app.js && node --check public/site.js && node --test"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "qrcode": "^1.5.4"
+  },
+  "overrides": {
+    "@solana/web3.js": {
+      "jayson": "^5.0.0"
+    }
+  }
+}

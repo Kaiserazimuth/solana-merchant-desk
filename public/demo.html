@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d16"><link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg"><link rel="stylesheet" href="/styles.css"><title>Как работает — Solana Merchant Desk</title></head>
+<body><main class="shell">
+  <header class="topbar"><a class="brand" href="/"><span class="brand-icon">↗</span><span>Solana Merchant Desk<small>Открытая касса для SOL</small></span></a><nav class="nav"><a href="/">Касса</a><a href="/demo">Как работает</a><a href="/support">О проекте</a></nav><div class="cluster"><i>●</i> <span id="cluster-name">MAINNET</span></div></header>
+  <section class="hero"><div class="eyebrow">Понятный путь без посредника</div><h1>От счёта до подтверждения</h1><p>Сервис не берёт ваши средства под контроль. Он готовит транзакцию, а решение о переводе принимает покупатель в своём кошельке.</p></section>
+  <section class="card">
+    <ol class="steps">
+      <li><strong>Продавец создаёт счёт.</strong> Вводит описание и сумму в SOL. Приложение генерирует уникальную ссылку и сохраняет счёт только в этом браузере.</li>
+      <li><strong>Покупатель открывает ссылку.</strong> Blink-клиент получает спецификацию действия и транзакцию. В кошельке можно проверить адрес, сумму и Memo до подтверждения.</li>
+      <li><strong>Покупатель подтверждает перевод.</strong> Транзакция отправляется в Solana. Ссылка не может подписать её за пользователя и не хранит его ключи.</li>
+      <li><strong>Продавец проверяет подпись.</strong> Вставляет signature. Приложение сверяет финальность транзакции, Memo счёта и точную сумму перевода на настроенный адрес.</li>
+    </ol>
+    <div class="callout warning"><strong>Ограничения первой версии:</strong> только нативный SOL; журнал счетов локален и не синхронизируется между устройствами; ссылка не блокирует повторную оплату; для проверки нужен работающий RPC. Не используйте как бухгалтерский или налоговый реестр.</div>
+    <div class="hero-actions"><a class="button primary" href="/">Перейти к кассе</a><a class="button secondary" href="https://solana.com/docs/tools/actions" target="_blank" rel="noopener noreferrer">Спецификация Solana Actions</a></div>
+  </section>
+  <footer class="footer"><span>MIT · Kaiser Azimuth</span><a href="/support">О проекте и поддержка</a></footer>
+</main><script src="/site.js" defer></script></body></html>
